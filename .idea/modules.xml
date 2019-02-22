@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/kadai.java.iml" filepath="$PROJECT_DIR$/.idea/kadai.java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/kadai_java1.iml" filepath="$PROJECT_DIR$/kadai_java1.iml" />
     </modules>
   </component>
 </project>
