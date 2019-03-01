@@ -1,4 +1,7 @@
 import java.util.Scanner;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 public class shindan_kadai {
     public static void main(String[] args) {
@@ -25,9 +28,20 @@ public class shindan_kadai {
         int num2 = 0;
         int num3 = 0;
         int num4 = 0;
+        int rand_num = 0;
 
+        // 出る順番を決める配列をArrayListで作成する
+        List<Integer> random = new ArrayList<>();
+        for(int i = 0; i < question.length; i++) {
+            random.add(i);
+        }
+        // Collections.shuffleで配列をシャッフルできる
+        Collections.shuffle(random);
 
-            for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < question.length; i++) {
+            rand_num = random.get(i);
+
+//            for (int i = 0; i < 5; i++) {
 
                 System.out.println(question[i]);
                 System.out.println(Answer[i]);
