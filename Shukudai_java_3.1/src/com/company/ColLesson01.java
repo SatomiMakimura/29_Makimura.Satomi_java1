@@ -7,23 +7,23 @@ public class ColLesson01 {
 
     public static void main(String[] args) {
 
+        String[]word = new String[10];
+        String[]meaning=new String[10];
+        int i = 0;
 
-       int i = 0;
-
-        Word inputword = new Word();
+        Word input = new Word();
 
         System.out.println("わからなかった単語とその意味をスペースで区切って入力してください。");
-
-            while(i< 10){
-                String word = new java.util.Scanner(System.in).next();
-                String meaning = new java.util.Scanner(System.in).next();
-                inputword.InputWord(word,meaning);
+            while(i < 10){
+                Scanner sc = new Scanner(System.in);
+                String input_word = sc.nextLine();
+                String input_meaning = sc.nextLine();
+                input.InputWord(input_word,input_meaning);
+                i=i++;
 
                 System.out.print("次の単語と意味を入力してください。" + "e" + "で終了します。");
 
-                if(word.equals("e")) {
-                    break;
-                }
+                if("e".equals(input)) break;
             }
 
         for (int j = 0; j < word.length; j++) {
