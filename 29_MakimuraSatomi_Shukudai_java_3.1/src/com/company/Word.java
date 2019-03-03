@@ -5,8 +5,9 @@ public class Word {
     public String word ;
     public String meaning;
 
-    public void InputWord(String input_word, String input_meaning) {
-        word = input_word;
-        meaning = input_meaning;
+    public Word(String word, String meaning) {
+        this.word = word;
+        this.meaning = meaning;
+
     }
 }

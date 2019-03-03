@@ -56,6 +56,6 @@ public class CoinCase {
 
 
    public int GetAmount(){
-      return(coin500 * 500)+(coin100 * 100)+(coin50 * 50)+(coin10 * 10)+(coin5 * 5)+coin1;
+      return(coin500 * 500)+(coin100 * 100)+(coin50 * 50)+(coin10 * 10)+(coin5 * 5)+ coin1;
    }
 }
